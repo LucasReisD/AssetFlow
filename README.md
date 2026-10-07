@@ -11,7 +11,7 @@ Este projeto apresenta um formulário de cadastro básico, ideal para iniciantes
 
 Você pode acessar o formulário diretamente pelo GitHub Pages ou visualizar os arquivos no repositório:
 
-[Visualizar Formulário de Cadastro](https://lucasreisd.github.io/formulario-cadastro/)
+[Visualizar Formulário de Cadastro](https://lucasreisd.github.io/it-asset-intake/)
 
 ## Personalização
 
