@@ -1,66 +1,563 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <title>Formulário</title>
-  </head>
-  <body>
-    <main class="Container">
-      <header class="header">
-        <h2>Criar uma conta</h2>
-        <p>Preencha os dados abaixo para cadastrar sua conta</p>
-      </header>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-      <form id="form" class="form">
-        <div class="form-control">
-          <label for="username">Nome do Usuário</label>
-          <input
-            type="text"
-            id="username"
-            placeholder="Digite seu nome de Usuário"
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
+  <meta
+    name="description"
+    content="AssetFlow — Sistema de cadastro e gestão de ativos de TI"
+  >
+
+  <title>AssetFlow — Cadastro de Ativos de TI</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Rajdhani:wght@500;600;700&display=swap"
+    rel="stylesheet"
+  >
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="noise"></div>
+  <div class="scanline"></div>
+
+  <main class="app">
+
+    <!-- CABEÇALHO -->
+    <header class="topbar">
+
+      <a href="#" class="brand" aria-label="Página inicial do AssetFlow">
+
+        <span class="brand-mark">
+          <span></span>
+          <span></span>
+        </span>
+
+        <span class="brand-name">
+          ASSET<span>FLOW</span>
+        </span>
+
+      </a>
+
+      <div class="system-status">
+        <span class="status-dot"></span>
+        <span>SISTEMA ONLINE</span>
+      </div>
+
+    </header>
+
+
+    <!-- ÁREA PRINCIPAL -->
+    <section class="workspace">
+
+      <!-- PAINEL LATERAL -->
+      <aside class="intro-panel">
+
+        <div class="eyebrow">
+          <span class="line"></span>
+          GESTÃO DE ATIVOS DE TI
         </div>
 
-        <div class="form-control">
-          <label for="email">Email</label>
-          <input type="text" id="email" placeholder="Digite seu Email" />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
+        <h1>
+          CADASTRO<br>
+          <strong>DE ATIVO</strong>
+        </h1>
+
+        <p class="intro-text">
+          Registre, identifique e atribua equipamentos
+          da empresa através de um fluxo simples,
+          organizado e seguro.
+        </p>
+
+
+        <!-- INFORMAÇÕES DO SISTEMA -->
+        <div class="system-info">
+
+          <div class="info-row">
+            <span>REDE</span>
+            <strong>SEGURA</strong>
+          </div>
+
+          <div class="info-row">
+            <span>BANCO DE DADOS</span>
+            <strong>PRONTO</strong>
+          </div>
+
+          <div class="info-row">
+            <span>ACESSO</span>
+            <strong>AUTORIZADO</strong>
+          </div>
+
         </div>
 
-        <div class="form-control">
-          <label for="password">Senha</label>
-          <input type="text" id="password" placeholder="Digite sua Senha" />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
+
+        <!-- ELEMENTO DECORATIVO -->
+        <div class="target-display">
+
+          <div class="target-ring ring-one"></div>
+          <div class="target-ring ring-two"></div>
+
+          <div class="target-center">
+            ◆
+          </div>
+
+          <span class="target-label top">
+            NÚCLEO DO ATIVO
+          </span>
+
+          <span class="target-label bottom">
+            PRONTO
+          </span>
+
         </div>
 
-        <div class="form-control">
-          <label for="password-confirmation">Confirmação de Senha</label>
-          <input
-            type="text"
-            id="password-confirmation"
-            placeholder="Digite sua senha novamente"
-          />
-          <i class="fas fa-exclamation-circle"></i>
-          <i class="fas fa-check-circle"></i>
-          <small>Mensagem de erro</small>
+      </aside>
+
+
+      <!-- PAINEL DO FORMULÁRIO -->
+      <section class="form-panel">
+
+        <!-- FLUXO -->
+        <nav
+          class="workflow"
+          aria-label="Progresso do cadastro"
+        >
+
+          <div class="step active">
+            <span>01</span>
+            <p>IDENTIFICAÇÃO</p>
+          </div>
+
+          <div class="workflow-line"></div>
+
+          <div class="step">
+            <span>02</span>
+            <p>ATRIBUIÇÃO</p>
+          </div>
+
+          <div class="workflow-line"></div>
+
+          <div class="step">
+            <span>03</span>
+            <p>REVISÃO</p>
+          </div>
+
+        </nav>
+
+
+        <!-- TÍTULO -->
+        <div class="form-heading">
+
+          <div>
+
+            <span class="section-number">
+              01 / 03
+            </span>
+
+            <h2>
+              Identificação do Ativo
+            </h2>
+
+            <p>
+              Informe os dados básicos do equipamento.
+            </p>
+
+          </div>
+
+          <div class="corner-mark">
+            +
+          </div>
+
         </div>
 
-        <button type="submit">Enviar</button>
-      </form>
-    </main>
 
-    <script
-      src="https://kit.fontawesome.com/f9e19193d6.js"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+        <form
+          id="assetForm"
+          novalidate
+        >
+
+          <!-- IDENTIFICAÇÃO -->
+          <div class="form-section">
+
+            <div class="field-grid">
+
+              <!-- TIPO -->
+              <div class="field">
+
+                <label for="assetType">
+                  Tipo de Ativo
+                </label>
+
+                <div class="select-wrapper">
+
+                  <select
+                    id="assetType"
+                    required
+                  >
+
+                    <option
+                      value=""
+                      selected
+                      disabled
+                    >
+                      Selecione o tipo
+                    </option>
+
+                    <option value="Notebook">
+                      Notebook
+                    </option>
+
+                    <option value="Desktop">
+                      Computador
+                    </option>
+
+                    <option value="Monitor">
+                      Monitor
+                    </option>
+
+                    <option value="Impressora">
+                      Impressora
+                    </option>
+
+                    <option value="Scanner">
+                      Scanner
+                    </option>
+
+                    <option value="Rede">
+                      Equipamento de Rede
+                    </option>
+
+                    <option value="Outro">
+                      Outro
+                    </option>
+
+                  </select>
+
+                </div>
+
+                <small class="error-message"></small>
+
+              </div>
+
+
+              <!-- PATRIMÔNIO -->
+              <div class="field">
+
+                <label for="assetTag">
+                  Patrimônio
+                </label>
+
+                <input
+                  id="assetTag"
+                  type="text"
+                  placeholder="PAT-2026-001"
+                  autocomplete="off"
+                  required
+                >
+
+                <small class="error-message"></small>
+
+              </div>
+
+
+              <!-- NOME -->
+              <div class="field field-full">
+
+                <label for="assetName">
+                  Nome do Equipamento
+                </label>
+
+                <input
+                  id="assetName"
+                  type="text"
+                  placeholder="Dell Latitude 5420"
+                  autocomplete="off"
+                  required
+                >
+
+                <small class="error-message"></small>
+
+              </div>
+
+
+              <!-- SERIAL -->
+              <div class="field">
+
+                <label for="serialNumber">
+                  Número de Série
+                </label>
+
+                <input
+                  id="serialNumber"
+                  type="text"
+                  placeholder="CN0XXXXXXXX"
+                  autocomplete="off"
+                  required
+                >
+
+                <small class="error-message"></small>
+
+              </div>
+
+
+              <!-- FABRICANTE -->
+              <div class="field">
+
+                <label for="manufacturer">
+                  Fabricante
+                </label>
+
+                <input
+                  id="manufacturer"
+                  type="text"
+                  placeholder="Dell"
+                >
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- ATRIBUIÇÃO -->
+          <div class="form-divider">
+
+            <div class="divider-number">
+              02
+            </div>
+
+            <div>
+
+              <strong>
+                ATRIBUIÇÃO
+              </strong>
+
+              <span>
+                Defina o responsável e a localização
+              </span>
+
+            </div>
+
+          </div>
+
+
+          <div class="form-section">
+
+            <div class="field-grid">
+
+              <!-- SETOR -->
+              <div class="field">
+
+                <label for="department">
+                  Setor
+                </label>
+
+                <input
+                  id="department"
+                  type="text"
+                  placeholder="Suporte Técnico"
+                >
+
+              </div>
+
+
+              <!-- RESPONSÁVEL -->
+              <div class="field">
+
+                <label for="responsible">
+                  Responsável
+                </label>
+
+                <input
+                  id="responsible"
+                  type="text"
+                  placeholder="Lucas Reis"
+                >
+
+              </div>
+
+
+              <!-- LOCALIZAÇÃO -->
+              <div class="field">
+
+                <label for="location">
+                  Localização
+                </label>
+
+                <input
+                  id="location"
+                  type="text"
+                  placeholder="Fortaleza - CE"
+                >
+
+              </div>
+
+
+              <!-- STATUS -->
+              <div class="field">
+
+                <label for="status">
+                  Status Atual
+                </label>
+
+                <div class="select-wrapper">
+
+                  <select id="status">
+
+                    <option value="Disponível">
+                      Disponível
+                    </option>
+
+                    <option value="Em Uso">
+                      Em Uso
+                    </option>
+
+                    <option value="Em Manutenção">
+                      Em Manutenção
+                    </option>
+
+                    <option value="Baixado">
+                      Baixado
+                    </option>
+
+                  </select>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- OBSERVAÇÕES -->
+          <div class="field notes-field">
+
+            <label for="notes">
+              Observações
+            </label>
+
+            <textarea
+              id="notes"
+              rows="3"
+              placeholder="Adicione informações adicionais sobre o ativo..."
+            ></textarea>
+
+          </div>
+
+
+          <!-- RODAPÉ DO FORMULÁRIO -->
+          <div class="form-footer">
+
+            <div class="security-note">
+
+              <span class="lock-icon">
+                ◆
+              </span>
+
+              <div>
+
+                <strong>
+                  CADASTRO SEGURO
+                </strong>
+
+                <span>
+                  As informações são processadas localmente.
+                </span>
+
+              </div>
+
+            </div>
+
+
+            <button
+              type="submit"
+              class="submit-button"
+              id="submitButton"
+            >
+
+              <span class="button-text">
+                CADASTRAR ATIVO
+              </span>
+
+              <span class="button-arrow">
+                →
+              </span>
+
+            </button>
+
+          </div>
+
+        </form>
+
+
+        <!-- TELA DE SUCESSO -->
+        <div
+          class="success-screen"
+          id="successScreen"
+          aria-hidden="true"
+        >
+
+          <div class="success-icon">
+            ✓
+          </div>
+
+          <span class="section-number">
+            CADASTRO CONCLUÍDO
+          </span>
+
+          <h2>
+            Ativo Cadastrado
+          </h2>
+
+          <p>
+            O ativo foi registrado com sucesso no fluxo de cadastro.
+          </p>
+
+          <button
+            type="button"
+            id="newAssetButton"
+            class="secondary-button"
+          >
+            CADASTRAR OUTRO
+          </button>
+
+        </div>
+
+      </section>
+
+    </section>
+
+
+    <!-- RODAPÉ -->
+    <footer class="footer">
+
+      <span>
+        ASSETFLOW v2.0
+      </span>
+
+      <span class="footer-center">
+        SISTEMA DE GESTÃO DE ATIVOS
+      </span>
+
+      <span>
+        STATUS <b>●</b>
+      </span>
+
+    </footer>
+
+  </main>
+
+
+  <script src="script.js"></script>
+
+</body>
 </html>

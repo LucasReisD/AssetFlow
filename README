@@ -1,0 +1,76 @@
+# ◆ AssetFlow
+
+### Cadastro e Registro de Ativos de TI
+
+O AssetFlow é uma interface moderna para cadastro de ativos de TI, desenvolvida para simplificar o registro, a identificação e a atribuição de equipamentos da empresa.
+
+O projeto combina uma interface tática inspirada em interfaces de jogos competitivos com um fluxo profissional de gestão de ativos de TI.
+
+---
+
+## Prévia
+
+> Adicione uma captura de tela da aplicação aqui.
+
+---
+
+## Funcionalidades
+
+- Cadastro de ativos de TI
+- Identificação de ativos
+- Informações de atribuição
+- Gerenciamento do status dos ativos
+- Validação de formulário
+- Interface responsiva
+- Fluxo de conclusão do cadastro
+- Interface tática em tema escuro
+- Frontend leve
+- Sem frameworks pesados
+
+---
+
+## Design
+
+A identidade visual foi desenvolvida com base no conceito de:
+
+**Enterprise IT × Interface de Jogo Competitivo**
+
+A interface utiliza como referência HUDs táticos e menus de jogos competitivos, mantendo uma identidade visual própria e voltada para um ambiente profissional de TI.
+
+### Paleta de Cores
+
+| Cor | Hex |
+|---|---|
+| Fundo | `#0A0B0D` |
+| Painel | `#111316` |
+| Painel Secundário | `#181A1F` |
+| Borda | `#30343B` |
+| Texto | `#F2F2F2` |
+| Texto Secundário | `#858B94` |
+| Cor Principal | `#FF4655` |
+| Cor Secundária | `#FF6A00` |
+| Sucesso | `#7CFF6B` |
+
+---
+
+## Tecnologias
+
+- HTML5
+- CSS3
+- JavaScript
+- Google Fonts
+
+Nenhum framework é necessário.
+
+---
+
+## Estrutura do Projeto
+
+```text
+assetflow/
+
+│
+├── index.html
+├── style.css
+├── script.js
+└── README.md
