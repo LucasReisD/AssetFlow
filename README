@@ -1,74 +1,118 @@
 # ◆ AssetFlow
 
-### Cadastro e Registro de Ativos de TI
+### IT Asset Intake & Registration
 
-O AssetFlow é uma interface moderna para cadastro de ativos de TI, desenvolvida para simplificar o registro, a identificação e a atribuição de equipamentos da empresa.
+**AssetFlow** is a modern IT asset intake interface designed to simplify the registration, identification, assignment, and status management of company hardware.
 
-O projeto combina uma interface tática inspirada em interfaces de jogos competitivos com um fluxo profissional de gestão de ativos de TI.
-
----
-
-## Link Para acessar
-
-> https://lucasreisd.github.io/AssetFlow/
+The project combines a **professional IT asset management workflow** with a tactical interface inspired by competitive gaming HUDs, creating a distinctive and functional experience without relying on heavy frameworks.
 
 ---
 
-## Funcionalidades
+## 🌐 Live Demo
 
-- Cadastro de ativos de TI
-- Identificação de ativos
-- Informações de atribuição
-- Gerenciamento do status dos ativos
-- Validação de formulário
-- Interface responsiva
-- Fluxo de conclusão do cadastro
-- Interface tática em tema escuro
-- Frontend leve
-- Sem frameworks pesados
+**[→ Access AssetFlow](https://lucasreisd.github.io/AssetFlow/)**
 
 ---
 
-## Design
+## 📸 Preview
 
-A identidade visual foi desenvolvida com base no conceito de:
+> Add a screenshot or GIF of the application here.
 
-**Enterprise IT × Interface de Jogo Competitivo**
+![AssetFlow Preview](./assets/preview.png)
 
-A interface utiliza como referência HUDs táticos e menus de jogos competitivos, mantendo uma identidade visual própria e voltada para um ambiente profissional de TI.
+---
 
-### Paleta de Cores
+## 🎯 About the Project
 
-| Cor | Hex |
+AssetFlow was created as a lightweight interface concept for **IT departments and technical support teams** that need a simple way to register and organize company equipment.
+
+The application focuses on the initial asset intake process, allowing technical staff to record important information about a device and its assignment.
+
+### The Concept
+
+**Enterprise IT × Competitive Game Interface**
+
+Instead of following a traditional administrative dashboard aesthetic, AssetFlow uses tactical visual elements while maintaining a professional and functional interface.
+
+---
+
+## ⚡ Features
+
+### Asset Registration
+
+- Register company IT equipment
+- Identify assets through relevant information
+- Record assignment details
+- Define the current asset status
+- Validate required fields
+
+### Interface
+
+- Responsive layout
+- Dark tactical interface
+- Clear visual hierarchy
+- Interactive form states
+- Registration completion flow
+- Lightweight frontend
+- No heavy frameworks
+
+---
+
+## 🖥️ Interface
+
+The visual identity was designed around a dark tactical environment inspired by modern competitive game interfaces.
+
+The goal is to combine:
+
+- **Professionalism**
+- **Technical aesthetics**
+- **Information hierarchy**
+- **Fast interaction**
+- **Minimal visual overhead**
+
+### Color Palette
+
+| Element | Color |
 |---|---|
-| Fundo | `#0A0B0D` |
-| Painel | `#111316` |
-| Painel Secundário | `#181A1F` |
-| Borda | `#30343B` |
-| Texto | `#F2F2F2` |
-| Texto Secundário | `#858B94` |
-| Cor Principal | `#FF4655` |
-| Cor Secundária | `#FF6A00` |
-| Sucesso | `#7CFF6B` |
+| Background | `#0A0B0D` |
+| Panel | `#111316` |
+| Secondary Panel | `#181A1F` |
+| Border | `#30343B` |
+| Primary Text | `#F2F2F2` |
+| Secondary Text | `#858B94` |
+| Primary Accent | `#FF4655` |
+| Secondary Accent | `#FF6A00` |
+| Success | `#7CFF6B` |
 
 ---
 
-## Tecnologias
+## 🛠️ Technologies
 
-- HTML5
-- CSS3
-- JavaScript
-- Google Fonts
+AssetFlow intentionally keeps its technology stack simple.
 
-Nenhum framework é necessário.
+- **HTML5** — application structure
+- **CSS3** — interface, layout, responsiveness and visual system
+- **JavaScript** — interaction and form logic
+- **Google Fonts** — typography
+
+### No Framework Required
+
+The project does not depend on React, Vue, Angular, Bootstrap, Tailwind or other heavy frontend frameworks.
+
+This keeps the application:
+
+- Lightweight
+- Fast to load
+- Easy to understand
+- Easy to modify
+- Simple to deploy
 
 ---
 
-## Estrutura do Projeto
+## 📁 Project Structure
 
 ```text
-assetflow/
-
+AssetFlow/
 │
 ├── index.html
 ├── style.css
